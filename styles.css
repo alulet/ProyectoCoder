@@ -1,0 +1,318 @@
+*{
+        box-sizing: border-box;
+        margin:0;
+        padding:0;
+}
+
+body {
+        background: #000000;
+        color: #FFFFFF;
+        background-color: #33343c;
+        background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23715d92' fill-opacity='0.1'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+        
+
+}
+
+
+
+
+a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+ul{
+    list-style:none;
+}
+
+.container{
+    width:90%;
+    margin: auto;
+}
+
+/* Navegacion */
+
+.nav-main{
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+    
+}
+
+.nav-brand {
+    width:50px;
+}
+
+.nav-main ul {
+    display:flex;
+    
+}
+
+.nav-main ul li{
+    padding:10px;
+}
+
+.nav-main ul li a{
+    padding:6px;
+
+}
+.nav-main ul li a:hover {
+
+    border-bottom: 2px solid #FFFFFF;
+
+}
+.nav-main ul.nav-menu{
+    flex:1;
+    margin-left: 20px;
+
+}
+
+
+.menu-btn{ 
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 30px;
+    display: none;
+    z-index: 2;
+    font-size: 20px;
+    
+}
+
+
+#Nosotros{
+
+    word-spacing: .8;
+    padding: 45px;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+
+}
+
+/* Carrousel */
+
+.imagen{
+
+    width:100%;
+    height:550px;
+    background:url(./assets/penji1.jpg) no-repeat center center/cover;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+
+}
+
+
+/* Catalogo */
+
+.catalogos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    margin: 10px 0;
+
+}
+
+.catalogos img {
+
+    width: 100%;
+    height: 500px;
+    border: 2px solid black;
+}
+.catalogos h3{
+
+    font-size: 20px;
+    margin: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.catalogos a {
+    padding: 10px 0;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    
+
+}
+
+.catalogos a:hover {
+    text-decoration: underline;
+}
+
+.imagen2{
+
+    width:100%;
+    height:350px;
+    background:url(./assets/penji2.jpg) no-repeat center center/cover;
+    margin-bottom: 20px;
+        
+
+}
+
+form{
+
+display: block;
+max-width: 100%;
+margin: auto;
+}
+
+form input, form textarea{
+margin-bottom: 15px;
+font-family: "Roboto", sans-serif;
+width: 100%;
+padding: 10px;
+-webkit-box-sizing: border-box;
+box-sizing: border-box; 
+border: none; 
+color: #525c66; 
+font-size: 1em;
+resize: horizontal; 
+}
+
+form button {
+display: block;
+background-color: #0095eb;
+padding: 10px 45px 10px 45px;
+border: 0;
+font-size: 1em; 
+color: 	white;
+font-family: "Roboto", sans-serif;
+}
+form button:hover{
+background-color: #046193;
+}
+textarea { resize: none; }
+
+.Formulario h3 {
+    padding: 10px;
+    
+}
+
+/* Social */
+
+.social {
+    margin: 50px;
+}
+
+.social p {
+    text-align:center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.links { 
+    display: flex;
+    align-items:center;
+    justify-content: center;
+
+}
+
+.links a{
+    margin: 0 30px;
+
+}
+
+.links a i { 
+        font-size: 2.2rem;
+}
+
+.footer {
+    color: #616161;
+    font-size: 12px;
+    padding: 20px 0;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+@media(max-width: 700px){
+
+
+    .menu-btn {
+        display:block;
+    }
+    .nav-main ul.nav-menu{
+
+        display:block;
+        position:absolute;
+        top:0;
+        left:0;
+        background: #2f3640;
+        height:100%;
+        padding: 30px;
+        opacity: .9;
+        transform:translateX(-400px);
+        transition: transform .5s ease-in-out;
+
+        
+    }
+    
+
+
+    .nav-main ul.nav-menu.show{
+        transform : translateX(-20px);
+    }
+
+    .nav-main ul.nav-menu li{
+        padding: 20px;
+        border-bottom: #ccc solid 1px;
+        font-size: 14px;
+    }
+
+    .nav-main ul.nav-menu-right {
+        margin-right: 40px;
+    }
+
+    .catalogos{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .imagen {
+
+        width:100%;
+        height:350px;
+        background:url(./assets/penji1.jpg) no-repeat center center/cover;
+        padding-bottom: 50px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        
+    
+    }
+
+    .imagen2 {
+
+        width:100%;
+        height:350px;
+        background:url(./assets/penji2.jpg) no-repeat left center/cover;
+        margin-bottom: 10px;
+    
+    }
+
+
+    #Nosotros{
+        
+        word-spacing: .8;
+        padding: 12px;
+        font-size: 12px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        
+    };
+};

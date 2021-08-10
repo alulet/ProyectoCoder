@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Grafica1</title>
+    <!-- Font -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    
+    <!-- Boostrap CSS -->
+    <!-- CSS -->
+        <link rel="stylesheet" href="styles.css">
+        <meta name="descripcion" content="Realizamos todo tipo de impresiones,vinilos,calcomanias. Hace tu pedido y te lo enviamos"> 
+        <meta name="keywords" content="vinilos,calcomanias,impresiones,grafica">
+</head>
+<body>
+
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class='container'>
+
+        <nav class='nav-main'>
+        <img src="./assets/home.jpeg" alt="logo" class="nav-brand">
+            <ul class='nav-menu show'>  
+                <li>
+                    <a href='#Home'> Home</a>
+                </li>
+                <li>
+                    <a href='#Nosotros'> Nosotros </a>
+                </li>
+                <li>
+                    <a href='#Catalogo'> Catalogo </a>
+                </li>
+                <li>
+                    <a href='#Trabajos'> Trabajos </a>
+                </li>
+                <li>
+                    <a href='#Formulario'> Contactanos </a>
+                </li>
+            </ul>
+            <ul class='nav-menu-right'>
+                <li>
+                    <a href='#'> 
+                        <i class='fas fa-search'> </i>
+                    </a>
+
+                </li>
+            </ul>
+        </nav>
+
+
+        <!-- primera imagen -->
+        <header id="Home" class="imagen">
+        </header>
+        <div id="Nosotros">
+        <p><strong>DG Grafica</strong> descubrió su pasión por el diseño e impresion en gran formato a temprana edad. 
+        En cada nuevo proyecto que se embarca pone todo su alento y dedicación, y los resultados reflejan su
+        pasión por todo lo relacionado con la impresion en gran formato. Cada nuevo trabajo de grafica vinilos agrega otro capítulo de 
+        originalidad a su ya impresionante portafolio. Para conocer mejor su estilo y talento, consulta sus trabajos que se muestran a continuación.</p>
+        </div>
+        <!-- Productos -->
+        
+        <div id="Catalogo" class='catalogos'>   
+            <div>
+                <img src="./assets/vinilos.jpg" alt="">
+                <h3> Vinilos </h3>
+                <a href="#" onClick="alert('Sitio en Construccion')"> Ver mas </a>
+            </div>
+            <div>
+                <img src="./assets/ploteados.jpg" alt="">
+                <h3> Ploteados </h3>
+                <a href="#" onClick="alert('Sitio en Construccion')"> Ver mas </a>
+            </div>
+            <div>
+                <img src="./assets/calcos.jpg" alt="">
+                <h3> Calcomanias </h3>
+                <a href="#" onClick="alert('Sitio en Construccion')">  Ver mas  </a>
+            </div>
+        </div>
+        
+        <!-- segunda imagen -->
+        <section class="imagen2">
+            
+        </section>
+
+        <!-- Productos -->
+        <h3> Trabajos Realizados </h3>
+        <div id="Trabajos" class='catalogos'>   
+            <div>
+                <img src="./assets/25imob.png" alt="">
+            </div>
+            <div>
+                <img src="./assets/trabajo1.jpg" alt="">
+            </div>
+            <div>
+                <img src="./assets/trabajo2.png" alt="">
+            </div>
+            <div>
+                <img src="./assets/trabajo4.jpg" alt="">
+                
+            </div>
+            <div>
+                <img src="./assets/trabajo5.jpg" alt="">
+                
+            </div>
+            <div>
+                <img src="./assets/ploteados1.jpg" alt="">
+                
+            </div>
+        </div>
+        
+        <!-- Formulario -->
+            <div id="Formulario" class="Formulario">
+            <form action="" method="post">
+                <h3> Dejanos tu mensaje </h3>	
+				<input name="nombre" type="text" placeholder="Nombre" maxlength="30" pattern="[a-zA-Z0-9]+" required autofocus/>
+				<input  name="email" type="email" placeholder="Correo electrónico" required />	
+				<textarea name="consulta" placeholder="¿Cuál es el motivo de tu consulta?" rows="6" required></textarea>
+				<button  name="enviar" type="submit" class="btn" > ENVIAR </button>
+            </form>	
+                </div>
+
+        <section class="social">
+        <p> Seguinos en nuestras redes </p>
+        <div class="links">
+
+            <a href="#"> <i class="fab fa-facebook-f"> </i></a>
+            <a href="#"> <i class="fab fa-instagram"> </i></a>
+        
+        </div>
+
+
+    </section>
+
+
+
+
+    </div>
+
+
+    <footer class='footer'>
+        <h3> Copyright 2021 </h3>
+    </footer>
+
+
+
+<script src='index.js'></script>
+</body>
+</html>
